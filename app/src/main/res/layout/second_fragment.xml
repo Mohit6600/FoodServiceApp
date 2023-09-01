@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/pic1" />
+
+    <TextView
+        android:layout_width="258sp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@+id/logo"
+        android:fontFamily="@font/poppins1"
+        android:text="Tamang FoodService"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="37sp"/>
+
+    <ImageView
+        android:id="@+id/drawing"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="160dp"
+       android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pic3" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/drawing"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/poppins1"
+        android:text="Free delivery offers"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Free delivery for new customers via Apple Pay and others payment methods."
+        android:textAlignment="center"
+        android:textColor="#868686"
+        android:textSize="17sp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GET STARTED"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_corner"
+        android:backgroundTint="#EEA734"/>
+
+</RelativeLayout>
