@@ -7,6 +7,6 @@ class testing : AppCompatActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.reset_email_sent_activity)
+        setContentView(R.layout.sign_up_activity)
     }
 }
