@@ -10,11 +10,10 @@
 
     <Button
         android:id="@+id/getStartedBtn"
-        android:layout_width="match_parent"
+        android:layout_width="370dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="23dp"
-        android:layout_marginRight="23dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="60dp"
         android:background="@drawable/btn_corner"
         android:backgroundTint="#EEA734"

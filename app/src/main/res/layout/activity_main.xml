@@ -61,13 +61,14 @@
         android:textSize="17sp" />
 
     <Button
+        android:id="@+id/getStartedBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="23dp"
         android:layout_marginRight="23dp"
         android:layout_marginBottom="50dp"
-        android:background="@drawable/btn_corner1"
+        android:background="@drawable/btn_corner"
         android:text="GET STARTED" />
 
     <ImageView

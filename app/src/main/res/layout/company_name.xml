@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/companyName"
+        android:layout_width="258sp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="85dp"
+        android:lineHeight="45dp"
+        android:fontFamily="@font/poppins1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="37sp"/>
+
+</RelativeLayout>

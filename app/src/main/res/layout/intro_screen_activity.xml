@@ -6,24 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginTop="105dp" />
+    <include layout="@layout/logo_activity" />
 
-    <TextView
-        android:id="@+id/companyName"
-        android:layout_width="258sp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="85dp"
-        android:layout_toRightOf="@+id/logo"
-        android:fontFamily="@font/poppins1"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="37sp" />
+    <include layout="@layout/company_name"/>
 
     <ImageView
         android:id="@+id/image"
