@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/close_btn_component" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:text="Find restaurants near you"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="35dp"
+            android:gravity="center_horizontal"
+            android:lineHeight="25dp"
+            android:text="Please enter your location or allow access to your location to find restaurants near you."
+            android:textColor="#868686"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/userCurrentLocation"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="230dp"
+        android:backgroundTint="@color/white"
+        android:text="Use current location"
+        android:textColor="@color/yellow"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/baseline_near_me_24"
+        android:textSize="16sp"
+        app:cornerRadius="5dp" />
+
+    <!--<ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_marginRight="-100dp"
+        android:layout_toLeftOf="@+id/userCurrentLocation"
+        android:src="@drawable/baseline_near_me_24" />-->
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="320dp"
+        android:background="@drawable/btn_corner"
+        android:backgroundTint="#1A868686">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/baseline_place_24" />
+
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+            android:id="@+id/autoCompleteTextVIew"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#00868686"
+            android:hint="Enter a new address"
+            android:textColor="#868686" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

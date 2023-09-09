@@ -7,6 +7,6 @@ class testing : AppCompatActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.sign_up_activity)
+        setContentView(R.layout.log_in_activity)
     }
 }
