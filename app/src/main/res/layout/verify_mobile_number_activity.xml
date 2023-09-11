@@ -2,7 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/_15sdp"
+    android:layout_marginRight="@dimen/_15sdp">
 
 
     <include layout="@layout/backbtn_logo_component" />
@@ -17,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="55dp"
+            android:layout_marginTop="@dimen/_20sdp"
             android:layout_marginRight="100dp"
             android:text="Login to Foodly"
             android:textSize="18sp"
@@ -27,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="@dimen/_25sdp"
             android:text="Verify phone number"
             android:textSize="30sp"
             android:textStyle="bold" />
@@ -35,9 +37,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="40dp"
             android:gravity="center_horizontal"
             android:lineHeight="25dp"
             android:text="Enter the 4-Digit code sent to you at"
@@ -45,12 +45,13 @@
             android:textSize="18sp" />
 
         <TextView
+            android:id="@+id/showUserPhoneNo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="user phone no"
             android:layout_gravity="center_horizontal"
-            android:textSize="18sp"
-            android:textColor="#010F07"/>
+            android:hint="user phone no"
+            android:textColor="#010F07"
+            android:textSize="18sp" />
 
     </LinearLayout>
 
@@ -63,68 +64,68 @@
         <EditText
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:text="5"
-            android:textAlignment="center"
-            android:textSize="24sp"
+            android:layout_marginTop="250dp"
             android:inputType="number"
-            android:layout_marginTop="250dp"/>
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textSize="24sp" />
 
         <EditText
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:text="5"
-            android:textAlignment="center"
             android:layout_marginStart="15dp"
-            android:textSize="24sp"
+            android:layout_marginTop="250dp"
             android:inputType="number"
-            android:layout_marginTop="250dp"/>
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textSize="24sp" />
 
         <EditText
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:text="5"
-            android:inputType="number"
-            android:textAlignment="center"
-            android:textSize="24sp"
             android:layout_marginStart="15dp"
-            android:layout_marginTop="250dp"/>
+            android:layout_marginTop="250dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textSize="24sp" />
 
         <EditText
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:text="5"
-            android:textAlignment="center"
-            android:textSize="24sp"
-            android:inputType="number"
             android:layout_marginStart="15dp"
-            android:layout_marginTop="250dp"/>
-
+            android:layout_marginTop="250dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:textSize="24sp" />
 
 
     </LinearLayout>
 
     <Button
         android:id="@+id/continueBtn"
-        android:layout_width="380dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
-        android:layout_marginTop="340dp"
+        android:layout_marginTop="@dimen/_260sdp"
         android:background="@drawable/btn_corner"
-        android:backgroundTint="#EEA734"
         android:text="Continue"
-        android:textAllCaps="true" />
+        android:textAllCaps="true"
+        app:backgroundTint="@color/yellow" />
 
     <Button
         android:id="@+id/dontHaveAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/continueBtn"
+        android:layout_marginTop="@dimen/_10sdp"
         android:layout_gravity="center"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="400dp"
+        android:layout_marginLeft="@dimen/_30sdp"
         android:backgroundTint="@color/white"
-        android:text="Didn't receive code??"
-        android:textColor="#868686"
+        android:text="Didn't receive code?"
+        android:textColor="@color/grey"
         android:textSize="12sp" />
 
     <Button
@@ -132,24 +133,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-       android:layout_toRightOf="@id/dontHaveAccount"
-        android:layout_marginTop="400dp"
+        android:layout_below="@id/continueBtn"
+        android:layout_toRightOf="@id/dontHaveAccount"
         android:backgroundTint="@color/white"
+        android:layout_marginLeft="-25dp"
+        android:layout_marginTop="@dimen/_10sdp"
         android:text="Resend Again"
-        android:layout_marginLeft="-30dp"
-        android:textColor="#EEA734"
+        android:textColor="@color/yellow"
         android:textSize="12sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/resendCodeAgain"
+        android:layout_marginLeft="@dimen/_20sdp"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="40dp"
+        android:layout_marginRight="@dimen/_20sdp"
         android:gravity="center_horizontal"
         android:lineHeight="25dp"
-        android:layout_below="@+id/resendCodeAgain"
         android:text="By Signing up ypu agree to our Terms Conditions &amp; Privacy Policy."
-        android:textColor="#868686"
+        android:textColor="@color/grey"
         android:textSize="18sp" />
 </RelativeLayout>

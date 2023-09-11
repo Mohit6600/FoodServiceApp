@@ -2,13 +2,15 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/_15sdp"
+    android:layout_marginRight="@dimen/_15sdp">
 
 
     <include layout="@layout/backbtn_logo_component" />
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
@@ -16,9 +18,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="45dp"
-            android:layout_marginRight="100dp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_70sdp"
+            android:layout_marginLeft="@dimen/_70sdp"
             android:text="Login to Tamang Food Services"
             android:textAlignment="center"
             android:textSize="18sp"
@@ -28,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="@dimen/_20sdp"
             android:text="Get started with Foodly"
             android:textSize="30sp"
             android:textStyle="bold" />
@@ -36,9 +38,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
+            android:layout_marginLeft="@dimen/_25sdp"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="40dp"
+            android:layout_marginRight="@dimen/_25sdp"
             android:gravity="center_horizontal"
             android:lineHeight="25dp"
             android:text="Enter your phone number to use foodly and enjoy your food :)"
@@ -55,7 +57,7 @@
                 android:id="@+id/fullName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="-15dp"
                 android:background="@color/white"
                 android:gravity="start"
                 android:hint="PHONE NUMBER"
@@ -77,13 +79,13 @@
 
     <Button
         android:id="@+id/signInBtn"
-        android:layout_width="380dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="@dimen/_300sdp"
         android:background="@drawable/btn_corner"
-        android:backgroundTint="#EEA734"
+        app:backgroundTint="#EEA734"
         android:text="Sign up"
         android:textAllCaps="true" />
 </RelativeLayout>
