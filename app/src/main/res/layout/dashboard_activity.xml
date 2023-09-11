@@ -2,7 +2,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -12,26 +13,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="@dimen/_15sdp"
             android:text="Delivery To"
             android:textAllCaps="true"
             android:textColor="@color/yellow"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="95dp"
-            android:layout_marginTop="70dp"
+           android:layout_marginLeft="@dimen/_80sdp"
+            android:layout_marginTop="@dimen/_40sdp"
             android:text="HayStreet, Perth"
             android:textAlignment="center"
-            android:textSize="24sp" />
+            android:textSize="22sp" />
 
         <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_42sdp"
             android:layout_toRightOf="@id/textview"
             android:scaleType="fitXY"
             android:src="@drawable/baseline_keyboard_arrow_down_24" />
@@ -39,20 +40,21 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="62dp"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_35sdp"
             android:layout_toRightOf="@id/textview"
             android:backgroundTint="@color/white"
             android:text="Filter"
+            android:gravity="end"
             android:textColor="@color/black"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_below="@+id/textview"
             android:layout_marginTop="20dp"
-            android:background="#7A000000" />
+            android:background="#32868686" />
 
         <!-- <ImageView
              android:id="@+id/dashboardImage"
@@ -65,17 +67,16 @@
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/viewPager2"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="150dp"
-            android:layout_marginRight="15dp" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_100sdp"
+             />
 
         <LinearLayout
             android:id="@+id/dashboardIndicatorContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="330dp"
-            android:layout_marginRight="60dp"
+            android:layout_marginTop="@dimen/_225sdp"
+            android:layout_marginRight="@dimen/_45sdp"
             android:gravity="end"
             android:orientation="horizontal" />
 
@@ -83,19 +84,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/dashboardIndicatorContainer"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="280dp"
+           android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_200sdp"
             android:text="Featured Partners"
-            android:textSize="20sp"
+            android:textSize="22sp"
             android:textStyle="bold" />
 
         <HorizontalScrollView
             android:id="@+id/dashboardHorizontalScrollView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="410dp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_295sdp"
             android:scrollbars="horizontal">
 
             <LinearLayout
@@ -116,8 +117,8 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="250dp"
-                            android:layout_height="200dp"
+                            android:layout_width="@dimen/_190sdp"
+                            android:layout_height="@dimen/_155sdp"
                             android:layout_gravity="start"
                             android:background="@drawable/btn_corner"
                             android:scaleType="centerCrop"
@@ -126,7 +127,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
+                            android:layout_marginTop="@dimen/_15sdp"
                             android:text="Krispy Creme"
                             android:textSize="20sp" />
 
@@ -135,37 +136,38 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="St Georgece Terrace, Perth"
-                            android:textSize="20sp" />
+                            android:textColor="@color/grey"
+                            android:textSize="18sp" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
 
                             <TextView
-                                android:layout_width="50dp"
-                                android:layout_height="27dp"
-                                android:layout_marginTop="10dp"
-                                android:background="@drawable/btn_corner"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:background="@drawable/facebook_btncorner"
+                                android:backgroundTint="@color/yellow"
                                 android:text="4.5"
                                 android:textAlignment="center"
                                 android:textColor="@color/white"
-                                android:textSize="20sp" />
+                                android:textSize="18sp" />
 
 
                             <TextView
-                                android:layout_width="60dp"
-                                android:layout_height="30dp"
-                                android:layout_marginLeft="15dp"
-                                android:layout_marginTop="12dp"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_9sdp"
                                 android:text="25min"
-                                android:textSize="20sp" />
+                                android:textSize="18sp" />
 
 
                             <TextView
-                                android:layout_width="100dp"
-                                android:layout_height="30dp"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginTop="10dp"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginTop="@dimen/_9sdp"
                                 android:text=". Free delivery"
                                 android:textAlignment="textStart"
                                 android:textSize="16sp" />
@@ -180,7 +182,7 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginLeft="@dimen/_15sdp"
                     app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="0dp"
                     app:cardElevation="0dp">
@@ -191,8 +193,8 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="250dp"
-                            android:layout_height="200dp"
+                            android:layout_width="@dimen/_190sdp"
+                            android:layout_height="@dimen/_155sdp"
                             android:layout_gravity="start"
                             android:background="@drawable/btn_corner"
                             android:scaleType="centerCrop"
@@ -201,7 +203,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
+                            android:layout_marginTop="@dimen/_15sdp"
                             android:text="Mario Italiano"
                             android:textSize="20sp" />
 
@@ -210,37 +212,38 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Hay street, Perth City"
-                            android:textSize="20sp" />
+                            android:textColor="@color/grey"
+                            android:textSize="18sp" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
 
                             <TextView
-                                android:layout_width="50dp"
-                                android:layout_height="27dp"
-                                android:layout_marginTop="10dp"
-                                android:background="@drawable/btn_corner"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:background="@drawable/facebook_btncorner"
+                                android:backgroundTint="@color/yellow"
                                 android:text="4.5"
                                 android:textAlignment="center"
                                 android:textColor="@color/white"
-                                android:textSize="20sp" />
+                                android:textSize="18sp" />
 
 
                             <TextView
-                                android:layout_width="60dp"
-                                android:layout_height="30dp"
-                                android:layout_marginLeft="15dp"
-                                android:layout_marginTop="12dp"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_9sdp"
                                 android:text="25min"
-                                android:textSize="20sp" />
+                                android:textSize="18sp" />
 
 
                             <TextView
-                                android:layout_width="100dp"
-                                android:layout_height="30dp"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginTop="10dp"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginTop="@dimen/_9sdp"
                                 android:text=". Free delivery"
                                 android:textAlignment="textStart"
                                 android:textSize="16sp" />
@@ -255,8 +258,8 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
                     app:cardBackgroundColor="#00FFFFFF"
+                    android:layout_marginLeft="@dimen/_15sdp"
                     app:cardCornerRadius="0dp"
                     app:cardElevation="0dp">
 
@@ -266,8 +269,8 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="250dp"
-                            android:layout_height="200dp"
+                            android:layout_width="@dimen/_190sdp"
+                            android:layout_height="@dimen/_155sdp"
                             android:layout_gravity="start"
                             android:background="@drawable/btn_corner"
                             android:scaleType="centerCrop"
@@ -276,7 +279,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
+                            android:layout_marginTop="@dimen/_15sdp"
                             android:text="Krispy Creme"
                             android:textSize="20sp" />
 
@@ -285,37 +288,38 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="St Georgece Terrace, Perth"
-                            android:textSize="20sp" />
+                            android:textColor="@color/grey"
+                            android:textSize="18sp" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
 
                             <TextView
-                                android:layout_width="50dp"
-                                android:layout_height="27dp"
-                                android:layout_marginTop="10dp"
-                                android:background="@drawable/btn_corner"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:background="@drawable/facebook_btncorner"
+                                android:backgroundTint="@color/yellow"
                                 android:text="4.5"
                                 android:textAlignment="center"
                                 android:textColor="@color/white"
-                                android:textSize="20sp" />
+                                android:textSize="18sp" />
 
 
                             <TextView
-                                android:layout_width="60dp"
-                                android:layout_height="30dp"
-                                android:layout_marginLeft="15dp"
-                                android:layout_marginTop="12dp"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_9sdp"
                                 android:text="25min"
-                                android:textSize="20sp" />
+                                android:textSize="18sp" />
 
 
                             <TextView
-                                android:layout_width="100dp"
-                                android:layout_height="30dp"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginTop="10dp"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginTop="@dimen/_9sdp"
                                 android:text=". Free delivery"
                                 android:textAlignment="textStart"
                                 android:textSize="16sp" />
@@ -332,12 +336,14 @@
 
         <ImageView
             android:id="@+id/dashboardPic3"
-            android:layout_width="370dp"
-            android:layout_height="180dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/dashboardHorizontalScrollView"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
-            android:scaleType="centerCrop"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:scaleType="fitXY"
             android:src="@drawable/dashboardpic3" />
 
         <TextView
@@ -345,9 +351,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/dashboardPic3"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="200dp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_150sdp"
             android:text="Best Picks Restaurants by team"
             android:textSize="22sp"
             android:textStyle="bold" />
@@ -357,7 +363,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/textview2"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="@dimen/_15sdp"
             android:scrollbars="horizontal">
 
             <LinearLayout
@@ -378,17 +384,18 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="250dp"
-                            android:layout_height="200dp"
+                            android:layout_width="@dimen/_190sdp"
+                            android:layout_height="@dimen/_155sdp"
                             android:layout_gravity="start"
                             android:background="@drawable/btn_corner"
                             android:scaleType="centerCrop"
                             android:src="@drawable/dashboardpic5" />
 
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
+                            android:layout_marginTop="@dimen/_15sdp"
                             android:text="McDonald's"
                             android:textSize="20sp" />
 
@@ -397,37 +404,38 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Hay street, Perth City"
-                            android:textSize="20sp" />
+                            android:textColor="@color/grey"
+                            android:textSize="18sp" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
 
                             <TextView
-                                android:layout_width="50dp"
-                                android:layout_height="27dp"
-                                android:layout_marginTop="10dp"
-                                android:background="@drawable/btn_corner"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:background="@drawable/facebook_btncorner"
+                                android:backgroundTint="@color/yellow"
                                 android:text="4.5"
                                 android:textAlignment="center"
                                 android:textColor="@color/white"
-                                android:textSize="20sp" />
+                                android:textSize="18sp" />
 
 
                             <TextView
-                                android:layout_width="60dp"
-                                android:layout_height="30dp"
-                                android:layout_marginLeft="15dp"
-                                android:layout_marginTop="12dp"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_9sdp"
                                 android:text="25min"
-                                android:textSize="20sp" />
+                                android:textSize="18sp" />
 
 
                             <TextView
-                                android:layout_width="100dp"
-                                android:layout_height="30dp"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginTop="10dp"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginTop="@dimen/_9sdp"
                                 android:text=". Free delivery"
                                 android:textAlignment="textStart"
                                 android:textSize="16sp" />
@@ -452,8 +460,8 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="250dp"
-                            android:layout_height="200dp"
+                            android:layout_width="@dimen/_190sdp"
+                            android:layout_height="@dimen/_155sdp"
                             android:layout_gravity="start"
                             android:background="@drawable/btn_corner"
                             android:scaleType="centerCrop"
@@ -462,7 +470,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
+                            android:layout_marginTop="@dimen/_15sdp"
                             android:text="The Halal Guys"
                             android:textSize="20sp" />
 
@@ -471,37 +479,38 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Hay street, Perth City"
-                            android:textSize="20sp" />
+                            android:textColor="@color/grey"
+                            android:textSize="18sp" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
 
                             <TextView
-                                android:layout_width="50dp"
-                                android:layout_height="27dp"
-                                android:layout_marginTop="10dp"
-                                android:background="@drawable/btn_corner"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:background="@drawable/facebook_btncorner"
+                                android:backgroundTint="@color/yellow"
                                 android:text="4.5"
                                 android:textAlignment="center"
                                 android:textColor="@color/white"
-                                android:textSize="20sp" />
+                                android:textSize="18sp" />
 
 
                             <TextView
-                                android:layout_width="60dp"
-                                android:layout_height="30dp"
-                                android:layout_marginLeft="15dp"
-                                android:layout_marginTop="12dp"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_9sdp"
                                 android:text="25min"
-                                android:textSize="20sp" />
+                                android:textSize="18sp" />
 
 
                             <TextView
-                                android:layout_width="100dp"
-                                android:layout_height="30dp"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginTop="10dp"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginTop="@dimen/_9sdp"
                                 android:text=". Free delivery"
                                 android:textAlignment="textStart"
                                 android:textSize="16sp" />
@@ -526,8 +535,8 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="250dp"
-                            android:layout_height="200dp"
+                            android:layout_width="@dimen/_190sdp"
+                            android:layout_height="@dimen/_155sdp"
                             android:layout_gravity="start"
                             android:background="@drawable/btn_corner"
                             android:scaleType="centerCrop"
@@ -536,46 +545,47 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
-                            android:text="Krispy Creme"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:text="McDonald's"
                             android:textSize="20sp" />
 
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="St Georgece Terrace, Perth"
-                            android:textSize="20sp" />
+                            android:text="Hay street, Perth City"
+                            android:textColor="@color/grey"
+                            android:textSize="18sp" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
 
                             <TextView
-                                android:layout_width="50dp"
-                                android:layout_height="27dp"
-                                android:layout_marginTop="10dp"
-                                android:background="@drawable/btn_corner"
+                                android:layout_width="@dimen/_35sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginTop="@dimen/_8sdp"
+                                android:background="@drawable/facebook_btncorner"
+                                android:backgroundTint="@color/yellow"
                                 android:text="4.5"
                                 android:textAlignment="center"
                                 android:textColor="@color/white"
-                                android:textSize="20sp" />
+                                android:textSize="18sp" />
 
 
                             <TextView
-                                android:layout_width="60dp"
-                                android:layout_height="30dp"
-                                android:layout_marginLeft="15dp"
-                                android:layout_marginTop="12dp"
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_9sdp"
                                 android:text="25min"
-                                android:textSize="20sp" />
+                                android:textSize="18sp" />
 
 
                             <TextView
-                                android:layout_width="100dp"
-                                android:layout_height="30dp"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginTop="10dp"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginTop="@dimen/_9sdp"
                                 android:text=". Free delivery"
                                 android:textAlignment="textStart"
                                 android:textSize="16sp" />
@@ -595,35 +605,32 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/dashboardHorizontalScrollView2"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="200dp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
             android:text="All Restaurants"
-            android:textSize="20sp"
+            android:textSize="22sp"
             android:textStyle="bold" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/textview3"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="@dimen/_10sdp">
 
 
             <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/viewPager3"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_below="@+id/textview3"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp" />
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview3" />
 
             <LinearLayout
                 android:id="@+id/dashboardIndicatorContainer2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textview3"
-                android:layout_marginTop="190dp"
-                android:layout_marginRight="60dp"
+                android:layout_marginTop="@dimen/_125sdp"
+                android:layout_marginRight="@dimen/_50sdp"
                 android:gravity="end"
                 android:orientation="horizontal" />
 
@@ -631,67 +638,61 @@
                 android:id="@+id/textview4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="200dp"
-                android:layout_marginRight="200dp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_150sdp"
+                android:layout_marginRight="@dimen/_150sdp"
                 android:text="McDonald's"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textSize="20sp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="220dp">
-
-                <TextView
-                    android:layout_width="30dp"
-                    android:layout_height="27dp"
-                    android:layout_marginTop="10dp"
-                    android:text="$$"
-                    android:textAlignment="center"
-                    android:textSize="20sp" />
-
-
-                <TextView
-                    android:layout_width="60dp"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="12dp"
-                    android:text=". Chinese"
-                    android:textSize="20sp" />
-
-
-                <TextView
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:text=". American"
-                    android:textAlignment="textStart"
-                    android:textSize="20sp" />
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_170sdp">
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
+                    android:layout_height="wrap_content"
+                    android:text="$$"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text=". Chinese"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text=". American"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
                     android:text=". Deshi food"
                     android:textAlignment="textStart"
-                    android:textSize="20sp" />
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="270dp">
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_190sdp">
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="27dp"
-
+                    android:layout_height="wrap_content"
                     android:text="4.3"
                     android:textAlignment="center"
                     android:textSize="16sp" />
@@ -699,8 +700,8 @@
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:layout_marginLeft="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
                     android:drawableLeft="@drawable/baseline_star_24"
                     android:text="  200+ Ratings"
                     android:textSize="16sp" />
@@ -708,8 +709,8 @@
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
                     android:drawableLeft="@drawable/baseline_watch_later_24"
                     android:text="  25 Min"
                     android:textAlignment="center"
@@ -717,8 +718,8 @@
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
                     android:drawableLeft="@drawable/baseline_attach_money_24"
                     android:text="Free"
                     android:textAlignment="textStart"
