@@ -35,6 +35,7 @@
         android:layout_marginRight="40dp"
         android:textAlignment="center"
         android:textColor="#868686"
+        android:fontFamily="@font/poppins1"
         android:textSize="17sp" />
 
 

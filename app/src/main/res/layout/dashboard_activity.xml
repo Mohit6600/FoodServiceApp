@@ -1,354 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:text="Delivery To"
-        android:textAllCaps="true"
-        android:textColor="@color/yellow"
-        android:textSize="18sp" />
 
-    <TextView
-        android:id="@+id/textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="95dp"
-        android:layout_marginTop="80dp"
-        android:text="HayStreet, Perth"
-        android:textAlignment="center"
-        android:textSize="24sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Delivery To"
+            android:textAllCaps="true"
+            android:textColor="@color/yellow"
+            android:textSize="18sp" />
 
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="80dp"
-        android:layout_toRightOf="@id/textview"
-        android:scaleType="fitXY"
-        android:src="@drawable/baseline_keyboard_arrow_down_24" />
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="70dp"
+            android:text="HayStreet, Perth"
+            android:textAlignment="center"
+            android:textSize="24sp" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="72dp"
-        android:layout_toRightOf="@id/textview"
-        android:backgroundTint="@color/white"
-        android:text="Filter"
-        android:textColor="@color/black"
-        android:textSize="18sp" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="70dp"
+            android:layout_toRightOf="@id/textview"
+            android:scaleType="fitXY"
+            android:src="@drawable/baseline_keyboard_arrow_down_24" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="62dp"
+            android:layout_toRightOf="@id/textview"
+            android:backgroundTint="@color/white"
+            android:text="Filter"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_below="@+id/textview"
             android:layout_marginTop="20dp"
-            android:background="#43000000"
-            />
+            android:background="#7A000000" />
 
-    <!-- <ImageView
-         android:id="@+id/dashboardImage"
-         android:layout_width="370dp"
-         android:layout_height="200dp"
-         android:layout_centerHorizontal="true"
-         android:layout_marginTop="160dp"
-         android:scaleType="fitXY" />-->
+        <!-- <ImageView
+             android:id="@+id/dashboardImage"
+             android:layout_width="370dp"
+             android:layout_height="200dp"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="160dp"
+             android:scaleType="fitXY" />-->
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/viewPager2"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="160dp"
-        android:layout_marginRight="15dp" />
-
-    <LinearLayout
-        android:id="@+id/dashboardIndicatorContainer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="340dp"
-        android:layout_marginRight="60dp"
-        android:gravity="end"
-        android:orientation="horizontal" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/dashboardIndicatorContainer"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="280dp"
-        android:text="Featured Partners"
-        android:layout_marginTop="30dp"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
-    <HorizontalScrollView
-        android:id="@+id/dashboardHorizontalScrollView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="430dp"
-        android:scrollbars="horizontal"
-        android:layout_marginLeft="20dp">
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginRight="15dp" />
 
         <LinearLayout
+            android:id="@+id/dashboardIndicatorContainer"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="250dp"
-                        android:layout_height="200dp"
-                        android:layout_gravity="start"
-                        android:background="@drawable/btn_corner"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/dashboardpic1" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:text="Krispy Creme"
-                        android:textSize="20sp" />
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="St Georgece Terrace, Perth"
-                        android:textSize="20sp" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="27dp"
-                            android:layout_marginTop="10dp"
-                            android:background="@drawable/btn_corner"
-                            android:text="4.5"
-                            android:textAlignment="center"
-                            android:textColor="@color/white"
-                            android:textSize="20sp" />
-
-
-                        <TextView
-                            android:layout_width="60dp"
-                            android:layout_height="30dp"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="12dp"
-                            android:text="25min"
-                            android:textSize="20sp" />
-
-
-                        <TextView
-                            android:layout_width="100dp"
-                            android:layout_height="30dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="10dp"
-                            android:text=". Free delivery"
-                            android:textAlignment="textStart"
-                            android:textSize="16sp" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="250dp"
-                        android:layout_height="200dp"
-                        android:layout_gravity="start"
-                        android:background="@drawable/btn_corner"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/dashboardpic2" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:text="Mario Italiano"
-                        android:textSize="20sp" />
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Hay street, Perth City"
-                        android:textSize="20sp" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="27dp"
-                            android:layout_marginTop="10dp"
-                            android:background="@drawable/btn_corner"
-                            android:text="4.5"
-                            android:textAlignment="center"
-                            android:textColor="@color/white"
-                            android:textSize="20sp" />
-
-
-                        <TextView
-                            android:layout_width="60dp"
-                            android:layout_height="30dp"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="12dp"
-                            android:text="25min"
-                            android:textSize="20sp" />
-
-
-                        <TextView
-                            android:layout_width="100dp"
-                            android:layout_height="30dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="10dp"
-                            android:text=". Free delivery"
-                            android:textAlignment="textStart"
-                            android:textSize="16sp" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="250dp"
-                        android:layout_height="200dp"
-                        android:layout_gravity="start"
-                        android:background="@drawable/btn_corner"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/dashboardpic1" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:text="Krispy Creme"
-                        android:textSize="20sp" />
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="St Georgece Terrace, Perth"
-                        android:textSize="20sp" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="27dp"
-                            android:layout_marginTop="10dp"
-                            android:background="@drawable/btn_corner"
-                            android:text="4.5"
-                            android:textAlignment="center"
-                            android:textColor="@color/white"
-                            android:textSize="20sp" />
-
-
-                        <TextView
-                            android:layout_width="60dp"
-                            android:layout_height="30dp"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="12dp"
-                            android:text="25min"
-                            android:textSize="20sp" />
-
-
-                        <TextView
-                            android:layout_width="100dp"
-                            android:layout_height="30dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="10dp"
-                            android:text=". Free delivery"
-                            android:textAlignment="textStart"
-                            android:textSize="16sp" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-
-            </androidx.cardview.widget.CardView>
-        </LinearLayout>
-    </HorizontalScrollView>
-
-
-        <ImageView
-            android:id="@+id/dashboardPic3"
-            android:layout_width="370dp"
-            android:layout_height="180dp"
-            android:src="@drawable/dashboardpic3"
-            android:scaleType="centerCrop"
-            android:layout_below="@+id/dashboardHorizontalScrollView"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="330dp"
+            android:layout_marginRight="60dp"
+            android:gravity="end"
+            android:orientation="horizontal" />
 
         <TextView
-            android:id="@+id/textview2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/dashboardPic3"
+            android:layout_below="@id/dashboardIndicatorContainer"
             android:layout_marginLeft="25dp"
-            android:layout_marginRight="200dp"
-            android:layout_marginTop="10dp"
-            android:text="Best Picks Restaurants by team"
-            android:textSize="22sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="280dp"
+            android:text="Featured Partners"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <HorizontalScrollView
-            android:id="@+id/dashboardHorizontalScrollView2"
+            android:id="@+id/dashboardHorizontalScrollView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textview2"
-            android:scrollbars="horizontal"
-            android:layout_marginLeft="20dp">
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="410dp"
+            android:scrollbars="horizontal">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -357,7 +105,10 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -370,13 +121,88 @@
                             android:layout_gravity="start"
                             android:background="@drawable/btn_corner"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/dashboardpic5" />
+                            android:src="@drawable/dashboardpic1" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="20dp"
-                            android:text="McDonald's"
+                            android:text="Krispy Creme"
+                            android:textSize="20sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="St Georgece Terrace, Perth"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="50dp"
+                                android:layout_height="27dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/btn_corner"
+                                android:text="4.5"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="20sp" />
+
+
+                            <TextView
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="12dp"
+                                android:text="25min"
+                                android:textSize="20sp" />
+
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:text=". Free delivery"
+                                android:textAlignment="textStart"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="start"
+                            android:background="@drawable/btn_corner"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/dashboardpic2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="Mario Italiano"
                             android:textSize="20sp" />
 
 
@@ -429,79 +255,10 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="250dp"
-                            android:layout_height="200dp"
-                            android:layout_gravity="start"
-                            android:background="@drawable/btn_corner"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/dashboardpic4" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
-                            android:text="The Halal Guys"
-                            android:textSize="20sp" />
-
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Hay street, Perth City"
-                            android:textSize="20sp" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
-
-                            <TextView
-                                android:layout_width="50dp"
-                                android:layout_height="27dp"
-                                android:layout_marginTop="10dp"
-                                android:background="@drawable/btn_corner"
-                                android:text="4.5"
-                                android:textAlignment="center"
-                                android:textColor="@color/white"
-                                android:textSize="20sp" />
-
-
-                            <TextView
-                                android:layout_width="60dp"
-                                android:layout_height="30dp"
-                                android:layout_marginLeft="15dp"
-                                android:layout_marginTop="12dp"
-                                android:text="25min"
-                                android:textSize="20sp" />
-
-
-                            <TextView
-                                android:layout_width="100dp"
-                                android:layout_height="30dp"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginTop="10dp"
-                                android:text=". Free delivery"
-                                android:textAlignment="textStart"
-                                android:textSize="16sp" />
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp">
+                    android:layout_marginLeft="20dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -573,42 +330,405 @@
         </HorizontalScrollView>
 
 
+        <ImageView
+            android:id="@+id/dashboardPic3"
+            android:layout_width="370dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/dashboardHorizontalScrollView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dashboardpic3" />
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dashboardPic3"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="200dp"
+            android:text="Best Picks Restaurants by team"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:id="@+id/dashboardHorizontalScrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview2"
+            android:layout_marginLeft="20dp"
+            android:scrollbars="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="start"
+                            android:background="@drawable/btn_corner"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/dashboardpic5" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="McDonald's"
+                            android:textSize="20sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hay street, Perth City"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="50dp"
+                                android:layout_height="27dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/btn_corner"
+                                android:text="4.5"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="20sp" />
+
+
+                            <TextView
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="12dp"
+                                android:text="25min"
+                                android:textSize="20sp" />
+
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:text=". Free delivery"
+                                android:textAlignment="textStart"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="0dp"
+                    android:layout_marginLeft="20dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="start"
+                            android:background="@drawable/btn_corner"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/dashboardpic4" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="The Halal Guys"
+                            android:textSize="20sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hay street, Perth City"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="50dp"
+                                android:layout_height="27dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/btn_corner"
+                                android:text="4.5"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="20sp" />
+
+
+                            <TextView
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="12dp"
+                                android:text="25min"
+                                android:textSize="20sp" />
+
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:text=". Free delivery"
+                                android:textAlignment="textStart"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="0dp"
+                    android:layout_marginLeft="20dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="start"
+                            android:background="@drawable/btn_corner"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/dashboardpic1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="Krispy Creme"
+                            android:textSize="20sp" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="St Georgece Terrace, Perth"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="50dp"
+                                android:layout_height="27dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/btn_corner"
+                                android:text="4.5"
+                                android:textAlignment="center"
+                                android:textColor="@color/white"
+                                android:textSize="20sp" />
+
+
+                            <TextView
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="12dp"
+                                android:text="25min"
+                                android:textSize="20sp" />
+
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:text=". Free delivery"
+                                android:textAlignment="textStart"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:id="@+id/textview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dashboardHorizontalScrollView2"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="200dp"
+            android:text="All Restaurants"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview3"
+            android:layout_marginTop="10dp">
+
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPager3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/textview3"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" />
+
+            <LinearLayout
+                android:id="@+id/dashboardIndicatorContainer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview3"
+                android:layout_marginTop="190dp"
+                android:layout_marginRight="60dp"
+                android:gravity="end"
+                android:orientation="horizontal" />
+
             <TextView
-                android:id="@+id/textview3"
+                android:id="@+id/textview4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/dashboardHorizontalScrollView2"
                 android:layout_marginLeft="25dp"
+                android:layout_marginTop="200dp"
                 android:layout_marginRight="200dp"
-                android:text="All Restaurants"
-                android:layout_marginTop="20dp"
+                android:text="McDonald's"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-      <!--      <ImageView
-                android:layout_width="380dp"
-                android:layout_height="200dp"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/dashboardpic6"
-                android:layout_gravity="center"/>-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="220dp">
 
-        <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/viewPager3"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginLeft="15dp"
-            android:layout_below="@+id/textview3"
-            android:layout_marginRight="15dp" />
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="27dp"
+                    android:layout_marginTop="10dp"
+                    android:text="$$"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
 
-        <LinearLayout
-            android:id="@+id/dashboardIndicatorContainer2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="180dp"
-            android:layout_marginRight="60dp"
-            android:layout_below="@+id/textview3"
-            android:gravity="end"
-            android:orientation="horizontal" />
-</RelativeLayout>
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12dp"
+                    android:text=". Chinese"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text=". American"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text=". Deshi food"
+                    android:textAlignment="textStart"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="270dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="27dp"
+
+                    android:text="4.3"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:drawableLeft="@drawable/baseline_star_24"
+                    android:text="  200+ Ratings"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/baseline_watch_later_24"
+                    android:text="  25 Min"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/baseline_attach_money_24"
+                    android:text="Free"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
 
 </ScrollView>
