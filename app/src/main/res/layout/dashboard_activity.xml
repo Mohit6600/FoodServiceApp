@@ -2,8 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -23,7 +22,7 @@
             android:id="@+id/textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-           android:layout_marginLeft="@dimen/_80sdp"
+            android:layout_marginLeft="@dimen/_80sdp"
             android:layout_marginTop="@dimen/_40sdp"
             android:text="HayStreet, Perth"
             android:textAlignment="center"
@@ -44,8 +43,8 @@
             android:layout_marginTop="@dimen/_35sdp"
             android:layout_toRightOf="@id/textview"
             android:backgroundTint="@color/white"
-            android:text="Filter"
             android:gravity="end"
+            android:text="Filter"
             android:textColor="@color/black"
             android:textSize="16sp" />
 
@@ -68,8 +67,7 @@
             android:id="@+id/viewPager2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_100sdp"
-             />
+            android:layout_marginTop="@dimen/_100sdp" />
 
         <LinearLayout
             android:id="@+id/dashboardIndicatorContainer"
@@ -84,7 +82,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/dashboardIndicatorContainer"
-           android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
             android:layout_marginTop="@dimen/_20sdp"
             android:layout_marginRight="@dimen/_200sdp"
             android:text="Featured Partners"
@@ -258,8 +256,8 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:cardBackgroundColor="#00FFFFFF"
                     android:layout_marginLeft="@dimen/_15sdp"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="0dp"
                     app:cardElevation="0dp">
 
@@ -340,9 +338,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/dashboardHorizontalScrollView"
             android:layout_centerHorizontal="true"
-            android:layout_marginRight="@dimen/_15sdp"
             android:layout_marginLeft="@dimen/_15sdp"
             android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
             android:scaleType="fitXY"
             android:src="@drawable/dashboardpic3" />
 
@@ -450,10 +448,11 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
                     app:cardBackgroundColor="#00FFFFFF"
-                    app:cardElevation="0dp"
                     app:cardCornerRadius="0dp"
-                    android:layout_marginLeft="20dp">
+                    app:cardElevation="0dp">
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -525,10 +524,11 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
                     app:cardBackgroundColor="#00FFFFFF"
-                    app:cardElevation="0dp"
                     app:cardCornerRadius="0dp"
-                    android:layout_marginLeft="20dp">
+                    app:cardElevation="0dp">
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -612,11 +612,16 @@
             android:textStyle="bold" />
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/textview3"
+            app:cardBackgroundColor="#00FFFFFF"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="0dp"
             android:layout_marginTop="@dimen/_10sdp">
 
+            <!--used for last set of dashboard activity-->
 
             <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/viewPager3"
@@ -635,13 +640,132 @@
                 android:orientation="horizontal" />
 
             <TextView
-                android:id="@+id/textview4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_150sdp"
                 android:layout_marginRight="@dimen/_150sdp"
                 android:text="McDonald's"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_170sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$$"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text=". Chinese"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text=". American"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=". Deshi food"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_190sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.3"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:drawableLeft="@drawable/baseline_star_24"
+                    android:text="  200+ Ratings"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:drawableLeft="@drawable/baseline_watch_later_24"
+                    android:text="  25 Min"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:drawableLeft="@drawable/baseline_attach_money_24"
+                    android:text="Free"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardView"
+            app:cardBackgroundColor="#00FFFFFF"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="0dp"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPager4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/dashboardIndicatorContainer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_125sdp"
+                android:layout_marginRight="@dimen/_50sdp"
+                android:gravity="end"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_150sdp"
+                android:layout_marginRight="@dimen/_150sdp"
+                android:text="Cafe Brichor's"
                 android:textSize="20sp" />
 
             <LinearLayout
@@ -728,6 +852,149 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardView1"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:cardBackgroundColor="#00FFFFFF"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="0dp">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPager5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/dashboardIndicatorContainer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_125sdp"
+                android:layout_marginRight="@dimen/_50sdp"
+                android:gravity="end"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_150sdp"
+                android:layout_marginRight="@dimen/_150sdp"
+                android:text="Cafe Brichor's"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_170sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$$"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text=". Chinese"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text=". American"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text=". Deshi food"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_190sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.3"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:drawableLeft="@drawable/baseline_star_24"
+                    android:text="  200+ Ratings"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:drawableLeft="@drawable/baseline_watch_later_24"
+                    android:text="  25 Min"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:drawableLeft="@drawable/baseline_attach_money_24"
+                    android:text="Free"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@id/bottomNavigationBar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigationBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                app:menu="@menu/bottom_navigation_bar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </RelativeLayout>

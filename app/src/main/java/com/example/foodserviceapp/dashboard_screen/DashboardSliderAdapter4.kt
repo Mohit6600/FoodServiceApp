@@ -8,18 +8,18 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.foodserviceapp.R
 
 
-class DashboardSliderAdapter2(private val dashboardSlides: List<DashboardSlideDataClass2>) :
-    RecyclerView.Adapter<DashboardSliderAdapter2.ViewHolder>() {
+class DashboardSliderAdapter4(private val dashboardSlides: List<DashboardSlideDataClass4>) :
+    RecyclerView.Adapter<DashboardSliderAdapter4.ViewHolder>() {
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
         /*private val image = view.findViewById<ImageView>(R.id.dashboardImage)*/
-        private val image= view.findViewById<ImageView>(R.id.dashboardImage2)
+        private val image= view.findViewById<ImageView>(R.id.dashboardImage4)
 
-        fun bind(dashboardSlide: DashboardSlideDataClass2) {
+        fun bind(dashboardSlide: DashboardSlideDataClass4) {
 
             /*image.setImageResource(dashboardSlide.image)*/
-             image.setImageResource(dashboardSlide.image)
+            image.setImageResource(dashboardSlide.image)
 
 
         }

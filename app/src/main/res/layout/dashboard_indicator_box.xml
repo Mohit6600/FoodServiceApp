@@ -22,5 +22,18 @@
         android:layout_centerHorizontal="true"
         android:scaleType="fitXY" />
 
+    <ImageView
+        android:id="@+id/dashboardImage3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/dashboardImage4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY" />
 
 </RelativeLayout>
