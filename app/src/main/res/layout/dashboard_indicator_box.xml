@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_marginLeft="@dimen/_15sdp"
     android:layout_marginRight="@dimen/_15sdp"
-    tools:context=".dashboard_screen.DashboardActivity">
+    tools:context=".dashboard_activity.dashboard_screen.DashboardActivity">
 
     <ImageView
         android:id="@+id/dashboardImage"

@@ -1,4 +1,4 @@
-package com.example.foodserviceapp.dashboard_screen
+package com.example.foodserviceapp.dashboard_activity.dashboard_screen
 
 import android.os.Bundle
 import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
@@ -7,8 +7,22 @@ import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.get
+import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import com.example.foodserviceapp.R
+import com.example.foodserviceapp.dashboard_activity.dashboard_adapter.DashboardSliderAdapter
+import com.example.foodserviceapp.dashboard_activity.dashboard_adapter.DashboardSliderAdapter2
+import com.example.foodserviceapp.dashboard_activity.dashboard_adapter.DashboardSliderAdapter3
+import com.example.foodserviceapp.dashboard_activity.dashboard_adapter.DashboardSliderAdapter4
+import com.example.foodserviceapp.dashboard_activity.dashboard_dataclass.DashboardSlideDataClass
+import com.example.foodserviceapp.dashboard_activity.dashboard_dataclass.DashboardSlideDataClass2
+import com.example.foodserviceapp.dashboard_activity.dashboard_dataclass.DashboardSlideDataClass3
+import com.example.foodserviceapp.dashboard_activity.dashboard_dataclass.DashboardSlideDataClass4
+import com.example.foodserviceapp.dashboard_activity.dashboard_fragment.HomeFragment
+import com.example.foodserviceapp.dashboard_activity.dashboard_fragment.OrderFragment
+import com.example.foodserviceapp.dashboard_activity.dashboard_fragment.ProfileFragment
+import com.example.foodserviceapp.dashboard_activity.dashboard_fragment.SearchFragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 open class DashboardActivity : AppCompatActivity() {
@@ -28,7 +42,7 @@ open class DashboardActivity : AppCompatActivity() {
 
                 R.drawable.dashboardpic,
 
-            ),
+                ),
             DashboardSlideDataClass(
 
                 R.drawable.pic1,
@@ -60,7 +74,6 @@ open class DashboardActivity : AppCompatActivity() {
     )
 
 
-
     private val dashboardSliderAdapter3 = DashboardSliderAdapter3(
         listOf(
             DashboardSlideDataClass3(
@@ -83,7 +96,7 @@ open class DashboardActivity : AppCompatActivity() {
 
     )
 
-    private val dashboardSliderAdapter4= DashboardSliderAdapter4(
+    private val dashboardSliderAdapter4 = DashboardSliderAdapter4(
         listOf(
             DashboardSlideDataClass4(
 
@@ -154,7 +167,7 @@ open class DashboardActivity : AppCompatActivity() {
         setUpIndicator(dashboardIndicatorContainer3)
         setCurrentIndicator(0, dashboardIndicatorContainer3)
 
-        dashboardViewPager2.registerOnPageChangeCallback(object :
+        dashboardViewPager3.registerOnPageChangeCallback(object :
             ViewPager2.OnPageChangeCallback() {
 
             override fun onPageSelected(position: Int) {
@@ -170,7 +183,7 @@ open class DashboardActivity : AppCompatActivity() {
         setUpIndicator(dashboardIndicatorContainer4)
         setCurrentIndicator(0, dashboardIndicatorContainer4)
 
-        dashboardViewPager2.registerOnPageChangeCallback(object :
+        dashboardViewPager4.registerOnPageChangeCallback(object :
             ViewPager2.OnPageChangeCallback() {
 
             override fun onPageSelected(position: Int) {
@@ -178,6 +191,11 @@ open class DashboardActivity : AppCompatActivity() {
                 setCurrentIndicator(position, dashboardIndicatorContainer4)
             }
         })
+
+
+        setUpFragment()
+
+
 
     }
 
@@ -229,5 +247,33 @@ open class DashboardActivity : AppCompatActivity() {
 
     }
 
+    private fun setUpFragment(){
 
-}
+        val homeFragment = HomeFragment()
+        val searchFragment = SearchFragment()
+        val orderFragment = OrderFragment()
+        val profileFragment = ProfileFragment()
+
+        val bottomNavigationBar = findViewById<BottomNavigationView>(R.id.bottomNavigationBar)
+
+        /*setCurrentFragment(homeFragment)*/
+
+        bottomNavigationBar.setOnItemSelectedListener {
+            when (it.itemId){
+                R.id.home -> setCurrentFragment(homeFragment)
+                R.id.search -> setCurrentFragment(searchFragment)
+                R.id.orders-> setCurrentFragment(orderFragment)
+                R.id.profile -> setCurrentFragment(profileFragment)
+            }
+            true
+        }
+    }
+
+    private fun setCurrentFragment(fragment: Fragment) =
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.frameLayout, fragment)
+            commit()
+        }
+
+
+    }

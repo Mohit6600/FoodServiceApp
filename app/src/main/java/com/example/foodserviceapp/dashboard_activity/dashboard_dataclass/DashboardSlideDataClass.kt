@@ -1,4 +1,4 @@
-package com.example.foodserviceapp.dashboard_screen
+package com.example.foodserviceapp.dashboard_activity.dashboard_dataclass
 
 
 
